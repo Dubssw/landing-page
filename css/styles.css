@@ -1,0 +1,607 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles */
+
+.fade-in-bottom {
+    animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    color: white;
+
+}
+
+header {
+    background-image: url(/images/starBG.jpg);
+    height: 100%;
+}
+
+/* Navbar /////////////////////////////////////////////////////////////////////////////*/
+
+.logo {
+    max-width: 70px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.1);
+    padding: 0 60px;
+    background-color: white;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    height: 80px;
+}
+
+.navbar ul li a {
+    display: flex;
+    text-decoration: none;
+    padding: 0 50px;
+    align-items: center;
+    height: 100%;
+    color: black;
+    font-size: 1.2em;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+    background-color: rgb(81, 170, 230);
+    color: white;
+}
+
+.cta-button {
+    background-color: rgb(81, 170, 230);;
+    padding: 15px 25px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: rgb(238, 238, 238);
+    color: rgb(81, 170, 230);
+    box-shadow: 0 2px 10px rgb(81, 170, 230);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Navbar /////////////////////////////////////////////////////////////////////////////*/
+
+/* Landing Page /////////////////////////////////////////////////////////////////////////////*/
+
+header .row {
+    margin-top: 100px;
+}
+
+.container {
+    width: 1440px;
+    margin: auto;
+
+
+    /* border: 1px solid; */
+
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+}
+
+.landingpage, .landingpage2 {
+    flex-basis: 40%;
+    min-width: 300px;
+    padding: 50px 20px;
+
+    /* border: 1px solid; */
+}
+
+.landingpage {
+    background-color: rgba(255, 255, 255, 0.151);
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 0 10px 0 white;
+}
+
+.landingpage:hover {
+    background-color: rgba(255, 255, 255, 0.24);
+    transform: translateY(-10px);
+    cursor: crosshair;
+}
+
+.landingpage2 {
+    max-width: 500px;
+    transition: transform 0.8s ease;
+
+    /* border: 1px solid; */
+}
+
+.landingpage2:hover {
+    transform: scale(1.1);
+    cursor: grab;
+    
+}
+
+.landingpage2 img {
+    width: 100%;
+
+    /* border: 1px solid; */
+}
+
+
+
+.landingpage h1 {
+    font-size: 4em;
+    font-family: monospace;
+    color: rgb(81, 170, 230);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.65), 0 0 18px rgba(81, 170, 230, 0.55);
+}
+
+.fa-globe {
+    font-size: 0.6em;
+}
+
+.landingpage h3 {
+    font-size: 2em;
+    text-shadow: 2px 2px 8px rgba(148, 148, 148, 0.65), 0 0 18px rgba(81, 170, 230, 0.55);
+
+}
+
+.landingpage h3 span {
+    color: rgb(57, 212, 57);
+}
+
+.landingpage p {
+    padding: 20px 0;
+}
+
+#landingpage-cta {
+    display: inline-block;
+}
+
+
+/* Landing Page /////////////////////////////////////////////////////////////////////////////*/
+
+/* Service Page /////////////////////////////////////////////////////////////////////////////*/
+
+main {
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 120px;
+    /* border: 1px solid; */
+
+}
+
+.small-container {
+    width: 1300px;
+    margin: auto;
+
+    /* border: 1px solid; */
+
+}
+
+.pagetitle {
+    color: rgb(81, 170, 230);
+    text-align: center;
+    padding: 30px 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 8px rgba(148, 148, 148, 0.65), 0 0 18px rgba(81, 170, 230, 0.55);
+
+}
+
+.services-logo {
+    width: 250px;
+    height: 200px;
+    filter: grayscale(100);
+    
+    /* border: 1px solid; */
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.services-logo:hover {
+    filter: grayscale(0);
+    transform:translateY(-10px);
+    
+}
+
+.services-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.facebook-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.facebook-logo img{
+    width: 50%;
+}
+
+.services-logo h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+
+    /* border: 1px solid; */
+}
+
+/* Landing Page /////////////////////////////////////////////////////////////////////////////*
+
+/* About Us /////////////////////////////////////////////////////////////////////////////*/
+
+article {
+    /* background-color:rgb(0, 0, 0); */
+    background-image: url(/images/starBG.jpg);
+    color: rgb(255, 255, 255);
+    height: 100%;
+}
+
+.row2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    /* border: 1px solid; */
+
+}
+
+#aboutus-title {
+    padding-top: 80px;
+}
+
+.values .fade-in-bottom {
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.values::after {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.values {
+    background-color: rgba(255, 255, 255, 0.397);
+    font-size: 1.5em;
+    padding: 40px 20px;
+    margin: 50px 0;
+    flex-basis: 40%;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease, outline 0.5s ease;
+    box-shadow: 0 1px 20px rgb(255, 255, 255);
+
+
+    /* border: 1px solid red; */
+
+}
+
+.values:hover {
+    background-color: rgba(255, 255, 255, 0.274);
+    transform: translateY(-10px);
+    outline: 1px solid white;
+
+}
+
+.values h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    padding-bottom: 30px;
+}
+
+.values ul {
+    list-style: none;
+}
+
+.values ul li {
+    color: greenyellow;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.values ul p{
+    padding-bottom: 40px;
+}
+
+.fa-check {
+    color: greenyellow;
+}
+
+.waw {
+    font-size: 1.5em;
+    padding: 40px 20px;
+    flex-basis: 40%;
+
+}
+
+.waw h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    padding-bottom: 30px;
+}
+
+.waw p {
+    color: greenyellow;
+    
+}
+
+/* About Us /////////////////////////////////////////////////////////////////////////////*
+
+/* Testimonials /////////////////////////////////////////////////////////////////////////////*/
+
+section {
+    background-color: rgb(112, 112, 112);
+
+    /* border: 1px solid red; */
+}
+
+.results {
+    flex-basis: 40%;
+    min-width: 600px;
+    /* border: 1px solid blue; */
+
+}
+
+.results img {
+    width: 100%;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.226);
+    border-radius: 10px;
+    transition: transform 0.3s linear, box-shadow 0.3s linear;
+}
+
+.results img:hover {
+    transform: scale(1.1);
+    cursor: grab;
+}
+
+.results-text {
+    /* text-align: right; */
+    flex-basis: 40%;
+    min-width: 300px;
+    padding: 4px 20px;
+    font-size: 1.3em;
+    font-weight: 600;
+    line-height: 30px;
+
+
+    /* border: 1px solid rgb(0, 255, 0); */
+}
+
+.results-text2 {
+    flex-basis: 40%;
+    min-width: 300px;
+    padding: 0px 20px;
+    font-size: 1.3em;
+    font-weight: 600;
+    line-height: 30px;
+
+    /* border: 1px solid rgb(0, 255, 0); */
+}
+
+.result-span {
+    color: greenyellow;
+}
+
+#results-cta {
+    display: inline-block;
+}
+
+.flex-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    
+
+}
+
+
+/* Testimonials /////////////////////////////////////////////////////////////////////////////*
+
+
+/* Book A Call /////////////////////////////////////////////////////////////////////////////*/
+
+.end-container {
+    width: 100%;
+    margin: auto;
+    background-color: rgb(15, 35, 49);
+
+
+
+    /* border: 1px solid greenyellow; */
+
+}
+
+.row3 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+    /* border: 1px solid greenyellow; */
+
+}
+
+.starttext {
+    font-size: 1.5rem;
+    text-align: center;
+
+    line-height: 60px;
+
+    /* border: 1px solid; */
+}
+
+.enquiry {
+    background-color: rgb(46, 110, 153);
+    margin: 100px 0;
+    padding: 40px 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px black;
+    transition: transform 0.3s ease;
+
+
+    /* border: 1px solid white; */
+
+}
+
+.enquiry:hover {
+    transform: scale(1.05);
+    outline: 1px solid rgba(0, 0, 0, 0.664);
+    box-shadow: 0 2px 10px 0 black;
+}
+
+form {
+    display: grid;
+    color: black;
+    line-height: 40px;
+    
+
+
+    /* border: 1px solid green; */
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding-right: 5px;
+}
+
+input {
+    /* background-color: gray; */
+    border: none;
+    padding: 1ex 2ex;
+    border-radius: 10px;
+    
+}
+
+#messagepage {
+    padding: 0 0 20px;
+    color: black;
+
+    /* border: 1px solid black; */
+}
+
+#textbox {
+    text-align: center;
+    padding: 20px 10px;
+    
+}
+
+
+
+/* Book A Call //////////////////////////////////////////////////////////////////////////////////*/
+
+/* Footer //////////////////////////////////////////////////////////////////////////////////*/
+
+footer {
+    color: black;
+    background-color: rgb(240, 240, 240);
+
+
+    /* border: 1px solid greenyellow; */
+}
+
+.foot {
+    margin: 40px 0 50px;
+
+
+    /* border: 1px solid black; */
+}
+
+.foot2 {
+    text-align: center;
+}
+
+.foot h3, .foot h2 {
+    padding-bottom: 10px;
+    font-weight: 800;
+}
+
+.foot ul {
+    list-style: none;
+    line-height: 35px;
+    font-size: 1.3rem;
+}
+
+.foot ul a, .cr ul a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.1s ease;
+}
+
+.foot ul a:hover {
+    color: rgb(81, 170, 230);
+}
+
+/* Footer /////////////////////////////////////////////////////////////////////////////*/
+
+/* Copyright //////////////////////////////////////////////////////////////////////////////*/
+
+.cr {
+    background-color: lightgray;
+    padding: 5px 25px;
+}
+
+.cr ul {
+    list-style: none;
+}
+
+.cr ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+/* Copyright /////////////////////////////////////////////////////////////////////////////*/
+
+/* Keyframes /////////////////////////////////////////////////////////////////////////////*/
+
+
+@keyframes fade-in-bottom {
+  from {
+    transform: translateY(20px) scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px) scale(1);
+    opacity: 1;
+  }
+}
+
+.animated-element {
+  animation-name: fade-in-bottom;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
