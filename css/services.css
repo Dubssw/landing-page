@@ -8,11 +8,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
     color: white;
+    background-color: gray;
 }
 
 header {
     background-image: url(/images/starBG.jpg);
-    height: 100%;
+    height: 23.5rem;
+    margin-bottom: 50px;
 }
 
 .main-container {
@@ -24,8 +26,15 @@ header {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+
+    /* border: 1px solid; */
 }
+
+/* Page Container /////////////////////////////////////////////////////////////////////////////*/
+
+
+/* Navbar /////////////////////////////////////////////////////////////////////////////*/
 
 .logo {
     max-width: 70px;
@@ -90,10 +99,85 @@ header {
 
 /* Navbar /////////////////////////////////////////////////////////////////////////////*/
 
+
 /* Google Page /////////////////////////////////////////////////////////////////////////////*/
 
+#pagetitle {
+    text-align: center;
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1.5em 0; 
+
+    border: 1px solid;
+
+}
+.subnav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+
+
+    /* border: 1px solid rgb(255, 0, 43); */
+}
+
+.subnav ul {
+    display: flex;
+    list-style: none;
+    gap: 100px;
+    
+    /* border: 1px solid green; */
+}
+
+.subnav ul a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    padding: 5px 50px;
+    transition: background-color 0.3s ease, color 0.2s ease;
+    
+
+    /* border: 1px solid green; */
+
+}
+
+.subnav ul a:hover {
+    background-color: gray;
+}
+
+/* Sub Nav /////////////////////////////////////////////////////////////////////////////*/
+
+/* Landing Page /////////////////////////////////////////////////////////////////////////////*/
+
+
 .googlepage {
+    flex-basis: 49%;
+    
+
+    border: 1px solid;
+}
+
+.googlepage img {
+    width: 100%;
+}
+
+.gptext {
+    padding: 30px;
+    font-size: 1.5rem;
+}
+.gptext h1 {
+    text-align: center;
+    padding-bottom: 20px ;
+}
+
+/* Main Page /////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+.benefits {
     width: 200px;
     height: 200px;
-    background-color: aqua;
+    border: 1px solid;
 }
